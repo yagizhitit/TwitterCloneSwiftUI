@@ -20,6 +20,9 @@
 		6B6CF59D2B0A7530002910B8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CF59C2B0A7530002910B8 /* ProfileView.swift */; };
 		6B6CF5A12B0A762A002910B8 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CF5A02B0A762A002910B8 /* TweetFilterViewModel.swift */; };
 		6B6CF5A62B0A8776002910B8 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CF5A52B0A8776002910B8 /* UserRowView.swift */; };
+		6B6CF5AB2B0C1351002910B8 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CF5AA2B0C1351002910B8 /* SideMenuView.swift */; };
+		6B6CF5AD2B0C1359002910B8 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CF5AC2B0C1359002910B8 /* SideMenuOptionRowView.swift */; };
+		6B6CF5AF2B0C1366002910B8 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CF5AE2B0C1366002910B8 /* SideMenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		6B6CF59C2B0A7530002910B8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		6B6CF5A02B0A762A002910B8 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		6B6CF5A52B0A8776002910B8 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		6B6CF5AA2B0C1351002910B8 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		6B6CF5AC2B0C1359002910B8 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
+		6B6CF5AE2B0C1366002910B8 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				6B6CF5852B0A7226002910B8 /* Components */,
+				6B6CF5A72B0C1324002910B8 /* SideMenu */,
 				6B6CF5932B0A746A002910B8 /* Explore */,
 				6B6CF5922B0A7468002910B8 /* Notifications */,
 				6B6CF5912B0A7464002910B8 /* Messages */,
@@ -246,6 +253,32 @@
 			path = Users;
 			sourceTree = "<group>";
 		};
+		6B6CF5A72B0C1324002910B8 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6B6CF5A92B0C132F002910B8 /* ViewModels */,
+				6B6CF5A82B0C1328002910B8 /* Views */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		6B6CF5A82B0C1328002910B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B6CF5AA2B0C1351002910B8 /* SideMenuView.swift */,
+				6B6CF5AC2B0C1359002910B8 /* SideMenuOptionRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B6CF5A92B0C132F002910B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6B6CF5AE2B0C1366002910B8 /* SideMenuViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,11 +352,14 @@
 				6B6CF5992B0A74C1002910B8 /* MessagesView.swift in Sources */,
 				6B6CF59D2B0A7530002910B8 /* ProfileView.swift in Sources */,
 				6B6CF5752B0A71A9002910B8 /* ContentView.swift in Sources */,
+				6B6CF5AD2B0C1359002910B8 /* SideMenuOptionRowView.swift in Sources */,
 				6B6CF58C2B0A72E2002910B8 /* TweetRowView.swift in Sources */,
 				6B6CF5A12B0A762A002910B8 /* TweetFilterViewModel.swift in Sources */,
 				6B6CF5892B0A727C002910B8 /* FeedView.swift in Sources */,
+				6B6CF5AB2B0C1351002910B8 /* SideMenuView.swift in Sources */,
 				6B6CF5732B0A71A9002910B8 /* TwitterCloneSwiftUIApp.swift in Sources */,
 				6B6CF5952B0A749C002910B8 /* ExploreView.swift in Sources */,
+				6B6CF5AF2B0C1366002910B8 /* SideMenuViewModel.swift in Sources */,
 				6B6CF5A62B0A8776002910B8 /* UserRowView.swift in Sources */,
 				6B6CF58F2B0A742C002910B8 /* MainTabView.swift in Sources */,
 				6B6CF5972B0A74B1002910B8 /* NotificationsView.swift in Sources */,
