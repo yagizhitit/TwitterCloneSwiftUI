@@ -20,6 +20,22 @@ struct FeedView: View {
                     }
                 }
             }
+            Button{
+                showNewTweetView.toggle()
+            } label: {
+                Image("new-tweet-icon")
+                    .resizable()
+                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+                    .frame(width: 28, height: 28)
+                    .padding()
+            }
+            .background(Color(.systemBlue))
+            .foregroundColor(.white)
+            .clipShape(Circle())
+            .padding()
+            .fullScreenCover(isPresented: $showNewTweetView, content: {
+                NewTweetView()
+            })
         }
     }
 }
