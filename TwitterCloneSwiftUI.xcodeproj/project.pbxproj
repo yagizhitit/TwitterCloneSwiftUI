@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B2A927A2B1552B4007BB424 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A92792B1552B4007BB424 /* AuthViewModel.swift */; };
+		6B2A927C2B1555BE007BB424 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A927B2B1555BE007BB424 /* UserStatsView.swift */; };
 		6B3359222B11654C00E8DB68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B3359212B11654C00E8DB68 /* GoogleService-Info.plist */; };
 		6B3359252B1165A100E8DB68 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6B3359242B1165A100E8DB68 /* FirebaseAnalytics */; };
 		6B3359272B1165A100E8DB68 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 6B3359262B1165A100E8DB68 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -63,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		6B2A92792B1552B4007BB424 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		6B2A927B2B1555BE007BB424 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		6B3359212B11654C00E8DB68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6B6CF56F2B0A71A9002910B8 /* TwitterCloneSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterCloneSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6CF5722B0A71A9002910B8 /* TwitterCloneSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				6B6CF5A52B0A8776002910B8 /* UserRowView.swift */,
+				6B2A927B2B1555BE007BB424 /* UserStatsView.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				6B6CF5952B0A749C002910B8 /* ExploreView.swift in Sources */,
 				6B6CF5BF2B0C3BE0002910B8 /* RoundedShape.swift in Sources */,
 				6B6CF5AF2B0C1366002910B8 /* SideMenuViewModel.swift in Sources */,
+				6B2A927C2B1555BE007BB424 /* UserStatsView.swift in Sources */,
 				6B2A927A2B1552B4007BB424 /* AuthViewModel.swift in Sources */,
 				6B6CF5A62B0A8776002910B8 /* UserRowView.swift in Sources */,
 				6B6CF58F2B0A742C002910B8 /* MainTabView.swift in Sources */,
