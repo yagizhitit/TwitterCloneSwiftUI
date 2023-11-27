@@ -9,9 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showMenu = false
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        ZStack(alignment: .topLeading){
+        Group{
+            //no user logged in
+            if viewModel.userSession == nil {
+                LoginView()
+            } else {
+                //have a looged in user
+                mainInterfaceView
+            }
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+extension ContentView{
+    
+    var mainInterfaceView: some View{
+        ZStack(alignment: .topLeading) {
             MainTabView()
                 .navigationBarHidden(showMenu)
             
@@ -29,24 +49,26 @@ struct ContentView: View {
             
             SideMenuView()
                 .frame(width: 300)
-                .offset(x: showMenu ? 0: -300, y: 0)
-                .background(showMenu ? Color.white : Color.clear)
+                .offset(x: showMenu ? 0 : -360, y: 0)
+                .background(showMenu ? Color.white: Color.clear)
         }
         .navigationTitle("Home")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar{
-            ToolbarItem(placement: .navigationBarLeading){
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
                 Button{
-                    showMenu.toggle()
+                    withAnimation(.easeInOut){
+                        showMenu.toggle()
+                    }
                 } label: {
                     Circle()
                         .frame(width: 32, height: 32)
                 }
+                
             }
         }
+        .onAppear{
+            showMenu = false
+        }
     }
-}
-
-#Preview {
-    ContentView()
 }
