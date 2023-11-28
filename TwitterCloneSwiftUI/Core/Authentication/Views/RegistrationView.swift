@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct RegistrationView: View {
     @State private var email = ""
     @State private var username = ""
@@ -14,11 +16,13 @@ struct RegistrationView: View {
     @State private var password = ""
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var viewModel: AuthViewModel
-    
+
     var body: some View {
-        VStack {
-            AuthHeaderView(title1: "Get started.", title2: "Create your account")
+        NavigationStack{
         
+        VStack{
+            AuthHeaderView(title1: "Get started.", title2: "Create your account")
+
             VStack(spacing: 40){
                 CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
                 
@@ -46,10 +50,10 @@ struct RegistrationView: View {
                 .shadow(color: .gray.opacity(0.5), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x:0, y: 0)
             }
             .padding(32)
-            
+
             Spacer()
             
-            Button{
+            Button {
                 presentationMode.wrappedValue.dismiss()
             } label: {
                 HStack{
@@ -60,13 +64,27 @@ struct RegistrationView: View {
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
+                .padding(.bottom, 32)
             }
-            .padding(.bottom, 32)
+            
+            
         }
         .ignoresSafeArea()
+        .navigationDestination(isPresented: $viewModel.didAuthenticateUser) {
+                ProfilePhotoSelectorView()
+        }
+        
+        
+    }
+
+        
+        
+  
     }
 }
 
-#Preview {
-    RegistrationView()
+struct RegistrationView_Previews: PreviewProvider {
+    static var previews: some View {
+        RegistrationView()
+    }
 }
