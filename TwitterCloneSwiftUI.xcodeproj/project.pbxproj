@@ -66,6 +66,7 @@
 		6B9956FC2B1943F5005D02DD /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9956FB2B1943F5005D02DD /* UserService.swift */; };
 		6B9956FE2B194594005D02DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9956FD2B194594005D02DD /* User.swift */; };
 		6B9957012B194976005D02DD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6B9957002B194976005D02DD /* Kingfisher */; };
+		6B9957032B195B1E005D02DD /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9957022B195B1E005D02DD /* ExploreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		6B6CF5C32B0C3CE8002910B8 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		6B9956FB2B1943F5005D02DD /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		6B9956FD2B194594005D02DD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6B9957022B195B1E005D02DD /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +348,7 @@
 		6B6CF5A32B0A8748002910B8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6B9957022B195B1E005D02DD /* ExploreViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				6B6CF58C2B0A72E2002910B8 /* TweetRowView.swift in Sources */,
 				6B6CF5A12B0A762A002910B8 /* TweetFilterViewModel.swift in Sources */,
 				6B61CD092B16956D006AF6E5 /* ProfilePhotoSelectorView.swift in Sources */,
+				6B9957032B195B1E005D02DD /* ExploreViewModel.swift in Sources */,
 				6B6CF5892B0A727C002910B8 /* FeedView.swift in Sources */,
 				6B6CF5B62B0C3972002910B8 /* TextArea.swift in Sources */,
 				6B6CF5B42B0C3901002910B8 /* NewTweetView.swift in Sources */,
