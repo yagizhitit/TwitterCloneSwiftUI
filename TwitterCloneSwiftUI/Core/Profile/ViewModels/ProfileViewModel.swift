@@ -20,6 +20,10 @@ class ProfileViewModel: ObservableObject{
         self.fetchLikedTweets()
     }
     
+    var actionButtonTitle: String{
+        return user.isCurrentUser ? "Edit Profile" : "Follow"
+    }
+    
     func tweets(forFilter filter: TweetFilterViewModel) -> [Tweet]{
         switch filter{
         case .tweets:
